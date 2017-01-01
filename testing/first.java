@@ -6,5 +6,8 @@ class Apples{
 
     String result = (num < 12) ? "Less" : "More";
     System.out.println(result);
+
+    double myNum = 25.5d;
+    System.out.println(myNum);
   }
 }
