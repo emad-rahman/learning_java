@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Apples{
   public static void main(String args[]){
     System.out.println("Hello World!");
@@ -59,5 +61,15 @@ class returnValues{
     double tax = amountToTax * taxRate;
     System.out.println("Tax: " + tax);
     return tax;
+  }
+}
+
+class input{
+  public static void main(String args[]){
+    System.out.print("Enter your name: ");
+    Scanner in = new Scanner(System.in);
+    String name = in.next();
+    String greeting = "Hello " + name + "!";
+    System.out.println(greeting);
   }
 }
