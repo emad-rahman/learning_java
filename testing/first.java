@@ -26,6 +26,10 @@ class Variables{
     System.out.println("Setting the score to: " + myScore);
     displayScore();
     changeScore(100);
+    changeScore(-6);
+    changeScore(75);
+    changeScore(900);
+    changeScore(-650);
   }
 
   // change the score of the game and output to the console
@@ -37,5 +41,23 @@ class Variables{
 
   public static void displayScore(){
     System.out.println("Player score: " + myScore);
+  }
+}
+
+class returnValues{
+  public static double subtotal;
+
+  public static void main(String args[]){
+    subtotal = 15.00;
+
+    System.out.println("Subtotal: " + subtotal);
+    double total = subtotal + calculateTax(0.08, subtotal);
+    System.out.println("Total: " + total);
+  }
+
+  public static double calculateTax(double taxRate, double amountToTax){
+    double tax = amountToTax * taxRate;
+    System.out.println("Tax: " + tax);
+    return tax;
   }
 }
