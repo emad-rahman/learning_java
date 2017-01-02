@@ -23,11 +23,19 @@ class Variables{
 
   public static void main(String args[]){
     myScore = 1000;
-    changeScore();
+    System.out.println("Setting the score to: " + myScore);
+    displayScore();
+    changeScore(100);
   }
 
-  public static void changeScore(){
-    myScore = myScore + 100;
+  // change the score of the game and output to the console
+  public static void changeScore(int scoreDelta){
+    System.out.println("Changing the score by: " + scoreDelta);
+    myScore = myScore + scoreDelta;
+    displayScore();
+  }
+
+  public static void displayScore(){
     System.out.println("Player score: " + myScore);
   }
 }
