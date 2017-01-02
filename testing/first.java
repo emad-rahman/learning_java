@@ -17,3 +17,17 @@ class Test{
     System.out.println("Hello World! --test");
   }
 }
+
+class Variables{
+  public static int myScore;
+
+  public static void main(String args[]){
+    myScore = 1000;
+    changeScore();
+  }
+
+  public static void changeScore(){
+    myScore = myScore + 100;
+    System.out.println("Player score: " + myScore);
+  }
+}
