@@ -133,3 +133,20 @@ class conditions{
     }
   }
 }
+
+class whileLoop{
+  public static void main(String arge[]){
+    int myValue = 0;
+
+    while(myValue < 100){
+      myValue++;
+      System.out.println(myValue);
+    }
+
+    int myBadValue = 0;
+    do{
+      System.out.println("This will run atleast once");
+    } while (myBadValue != 0);
+
+  }
+}
