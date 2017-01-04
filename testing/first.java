@@ -73,3 +73,18 @@ class input{
     System.out.println(greeting);
   }
 }
+
+class manageDifferentVariableTypes{
+  public static void main(String args[]){
+    int myVariable = 5;
+    System.out.println("My variable is equal to " + myVariable + " and is an int.");
+    String myString = Integer.toString(myVariable);
+    System.out.println("myString is equal to " + myString + " and is a string");
+
+    myString += 1;
+    System.out.println("myString is equal to " + myString + " and is a string");
+
+    myVariable = Integer.parseInt(myString) + 1;
+    System.out.println("My variable is equal to " + myVariable + " and is an int.");
+  }
+}
