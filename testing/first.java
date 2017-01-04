@@ -150,3 +150,24 @@ class whileLoop{
 
   }
 }
+
+class menu{
+  public static void main(String args[]){
+    boolean run = true;
+
+    System.out.println("Press 'quit' to quit");
+    menu(run);
+  }
+
+  public static void menu(boolean run){
+    while(run){
+      System.out.print("> ");
+      Scanner in = new Scanner(System.in);
+      String input = in.next();
+
+      if(input.equals("quit")){
+        break;
+      }
+    }
+  }
+}
