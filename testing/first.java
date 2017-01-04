@@ -88,3 +88,48 @@ class manageDifferentVariableTypes{
     System.out.println("My variable is equal to " + myVariable + " and is an int.");
   }
 }
+
+class conditions{
+  public static void main(String args[]){
+    boolean knowJava = true;
+    System.out.println("The value of knowJava is "+knowJava);
+
+    if(knowJava){
+      System.out.println("I know Java!");
+    }
+
+    //using if one a single line on code
+    if(knowJava) System.out.println("I still know Java!");
+
+    int myValue = 5;
+    System.out.println("myValue is: "+myValue);
+
+    if(myValue == 5){
+      System.out.println("myValue == 5 is true");
+    }
+
+    if(myValue < 5){
+      System.out.println("myValue < 5 is true");
+    }else{
+      System.out.println("myValue < 5 is false");
+    }
+
+
+    if(myValue != 5){
+      System.out.println("myValue != 5 is true");
+    }else if(myValue > 5){
+      System.out.println("myValue > 5 is true");
+    }else{
+      System.out.println("All conditions are false");
+    }
+
+
+    //nested if - else
+    if (myValue >= 1){
+      System.out.println("myValue >= 1 is true");
+      if(myValue <= 5){
+        System.out.println("myValue <= 5 is true");
+      }
+    }
+  }
+}
